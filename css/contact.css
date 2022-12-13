@@ -43,12 +43,3 @@ div2 {
 p {
     font-size: large;
 }
-
-.footer {
-    position: fixed;
-    text-align: center;
-    bottom: 0px;
-    width: 100%;
-    color: white;
-    font-size: large;
-}
