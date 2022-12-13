@@ -65,12 +65,3 @@ img {
     margin-left: auto;
     margin-right: auto;
 }
-
-.footer {
-    position: fixed;
-    text-align: center;
-    bottom: 0px;
-    width: 100%;
-    color: white;
-    font-size: large;
-}
