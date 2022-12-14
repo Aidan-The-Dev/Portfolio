@@ -45,19 +45,13 @@ h1 {
     font-size: large;
     color: white;
     width: 0;
-    animation: typing 2s forwards;
+    animation: typing 3s forwards;
   }
 
   @keyframes typing {
     from { width: 0 }
     to { width: 100% }
   }
-
-@keyframes blink {
-    50% {
-        border-color: transparent;
-    }
-}
 
 img {
     display: block;
