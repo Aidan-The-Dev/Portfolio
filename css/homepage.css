@@ -40,7 +40,7 @@ h1 {
 
 .typing {
     overflow: hidden;
-    border-right: .10em solid white;
+    border-right: .15em solid white;
     white-space: nowrap;
     font-size: large;
     color: white;
