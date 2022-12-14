@@ -46,6 +46,7 @@ h1 {
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid white;
+    text-align: center;
 }
 
 @keyframes typing {
