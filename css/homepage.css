@@ -40,12 +40,13 @@ h1 {
 
   .typing{
     overflow: hidden;
-    border-right: .15em solid orange;
+    border-right: .15em solid white;
     white-space: nowrap;
-    font-size: 1.6rem;
+    font-size: large;
+    color: white;
     width: 0;
     animation: 
-      typing 1s steps(20, end) forwards,
+      typing 1s steps(91, end) forwards,
       blink .8s infinite;
 }
 
