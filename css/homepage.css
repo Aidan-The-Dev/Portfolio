@@ -34,18 +34,18 @@ h1 {
     text-align: center;
 }
 
-.container {
+.container{
     display: inline-block;
-}
+  }
 
-.typing {
+  .typed-out{
     overflow: hidden;
     border-right: .15em solid white;
     white-space: nowrap;
-    font-size: large;
-    color: white;
+    animation: 
+    typing 1s steps(91, end) forwards;
+    font-size: 1.6rem;
     width: 0;
-    animation: typing 3s forwards;
   }
 
   @keyframes typing {
