@@ -38,7 +38,7 @@ h1 {
     display: inline-block;
   }
 
-  .typed-out{
+  .typing{
     overflow: hidden;
     border-right: .15em solid white;
     white-space: nowrap;
