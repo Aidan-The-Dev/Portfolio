@@ -44,6 +44,7 @@ h1 {
     white-space: nowrap;
     font-size: large;
     color: white;
+    text-align: center;
     width: 0;
     animation: typing 2s forwards;
   }
