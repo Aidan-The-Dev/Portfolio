@@ -34,26 +34,23 @@ h1 {
     text-align: center;
 }
 
-.wrapper {
-    display: grid;
-    place-items: center;
+.container {
+    display: inline-block;
 }
 
-.typing h2 {
-    color: white;
-    width: 132ch;
-    animation: typing 2s steps(1), blink .5s step-end infinite alternate;
-    white-space: nowrap;
+.typing {
     overflow: hidden;
-    border-right: 3px solid white;
-    text-align: center;
-}
+    border-right: .15em solid white;
+    white-space: nowrap;
+    font-size: 1.6rem;
+    width: 0;
+    animation: typing 2s forwards;
+  }
 
-@keyframes typing {
-    from {
-        width: 0;
-    }
-}
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
 
 @keyframes blink {
     50% {
