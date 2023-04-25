@@ -21,7 +21,7 @@ nav ul li {
 a {
     color: white;
     text-decoration: none;
-    text-align: center;
+    position: center;
 }
 
 nav ul li {
