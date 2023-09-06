@@ -1,45 +1,97 @@
 body {
-    background-color: #2c2f33;
+    background-color: #343a40;
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
 nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
     background-color: #23272a;
-}
-
-nav ul li {
-    display: block;
     text-align: center;
-    padding: 14px 16px;
-    font-size: large;
-    font-family: consolas;
-}
-
-a {
-    color: white;
-    text-decoration: none;
+    padding: 10px 0;
+    margin: 0;
+    list-style: none;
 }
 
 nav ul li {
     display: inline-block;
-    width: 100px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f39c12;
 }
 
 div {
     text-align: center;
     padding-top: 5vh;
-    color: white;
-    font-size: large;
+    color: #ffffff;
 }
 
-div2 {
+h1 {
+    font-size: 2.5em;
+    margin-top: 20px;
+    text-decoration: underline;
+}
+
+form {
+    margin: 0 auto;
+    max-width: 400px;
+    text-align: left;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #333; /* Darker border color */
+    background-color: #444; /* Darker background color */
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1.2em;
+    color: #ffffff; /* Text color */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #f39c12;
+}
+
+input[type="submit"] {
+    background-color: #f39c12;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 0; /* Adjust vertical padding */
+    width: 100%; /* Make the button width 100% */
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #e68a00;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
     text-align: center;
-    color: white;
-}
-
-p {
-    font-size: large;
+    padding: 10px 0; /* Adjust padding */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 1.2em;
 }
