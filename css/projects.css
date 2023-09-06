@@ -1,47 +1,117 @@
+/* Reset default styles */
+body, h1, h2, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Global styles */
 body {
-    background-color: #2c2f33;
+    background-color: #343a40;
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+    text-align: center;
 }
 
 nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
     background-color: #23272a;
-}
-
-nav ul li {
-    display: block;
     text-align: center;
-    padding: 14px 16px;
-    font-size: large;
-    font-family: consolas;
-}
-
-a {
-    color: white;
-    text-decoration: none;
+    padding: 10px 0;
 }
 
 nav ul li {
     display: inline-block;
-    width: 100px;
+    padding: 10px 20px;
+    font-size: 1.2em;
 }
 
+nav ul li a {
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f39c12;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Change height to min-height */
+    position: relative;
+}
+
+.typing {
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 1.5em;
+    color: #ffffff;
+    animation: typing 3s steps(91, end) forwards, blink 0.8s infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink {
+    from { border-color: transparent }
+    to { border-color: #ffffff; }
+}
+
+/* Project-specific styles */
 h1 {
-    color: white;
-    text-align: center;
+    font-size: 2.5em;
+    margin-top: 20px;
+    text-decoration: underline;
 }
 
 img {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: 200px;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.7);
+}
+
+/* Additional styles for npm logos */
+img[src*="npm-logo"] {
+    max-width: 100px; /* Adjust the max width as needed */
+    height: auto;
+}
+
+img[src*="UWN_Bot_Logo"],
+img[src*="android-chrome-192x192"] {
+    max-width: 100px;
+    height: auto;
+}
+
+/* Apply margin to paragraphs next to source code links */
+a.project-link {
+    text-decoration: underline;
+    color: #ffffff;
+    font-size: 1.2em;
+    display: block; /* Add this line */
+    margin-top: 10px; /* Adjust the margin-top as needed */
+}
+
+a.project-link:hover {
+    color: #f39c12;
 }
 
 p {
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
     text-align: center;
-    color: white;
-    font-size: large;
+    padding: 20px 0;
 }
