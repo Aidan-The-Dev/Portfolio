@@ -85,11 +85,6 @@ img[src*="npm-logo"] {
     height: auto;
 }
 
-img[src*=*"bot-hosting-net"] {
-    max-width: 100px;
-    height: auto;
-}
-
 img[src*="UWN_Bot_Logo"],
 img[src*="android-chrome-192x192"] {
     max-width: 100px;
