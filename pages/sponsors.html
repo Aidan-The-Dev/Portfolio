@@ -10,39 +10,52 @@
     <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
     <link rel="manifest" href="../images/site.webmanifest">
+    <script src="../index.js" defer></script>
 </head>
 <body>
-    <nav>
+    <nav class="navbar">
         <ul>
-            <center>
-                <li><a href="../index.html">Homepage</a></li>
-                <li><a href="./projects.html">Projects</a></li>
-                <li><a href="./about.html">About</a></li>
-                <li><a href="./sponsors.html">Sponsors</a></li>
-                <!--<li><a href="./contact.html">Contact</a></li>-->
-            </center>
+            <li><a href="../index.html">Homepage</a></li>
+            <li><a href="./projects.html">Projects</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./sponsors.html">Sponsors</a></li>
+            <li><a href="./contact.html">Contact</a></li>
         </ul>
     </nav>
 
     <div class="container">
-        <h1 style="text-decoration: none;">My Sponsors</h1>
-        <div class="sponsor">
-            <img src="../images/CinchLogoGifClear.gif" alt="CinchGaming Logo">
-            <h2><a style="text-decoration: underline;" href="https://cinchgaming.com/?ref=aidanthedev" target="_blank">Cinch Gaming</a></h2>
-            <p>Founded in 2014, Cinch Gaming has helped evolve the pro controller as you know it today. We are based in the USA, and offer the world's fastest pro controllers.</p>
-            <p>Use my code at checkout for 10% off: aidanthedev</p>
-        </div>
-        <div class="sponsor">
-            <img src="../images/bothosting.png" alt="Bot Hosting.net Logo">
-            <h2><a style="text-decoration: underline;" href="https://bot-hosting.net/?aff=497200251661320212" target="_blank">Bot Hosting</a></h2>
-            <p>Bot-Hosting.net has been succesfully running since 2021 and we are proud to have helped thousands of users bring their bots online 24/7.
-                We know hosting can be confusing, which is why we've tried to simplify the process with extensive guides in our docs. We hope we can help you too, why not give it a try ~ it's free!</p>
-                <p>Use my link to support me.</p>
-            </div>        
+        <section class="sponsors-header">
+            <h1>Special Thanks to My Sponsors</h1>
+            <p>I'm proud to be partnered with these amazing brands that help me push my projects to new heights. Check them out and use my exclusive codes for discounts!</p>
+        </section>
+
+        <section class="sponsor-list">
+            <div class="sponsor">
+                <div class="sponsor-logo">
+                    <img src="../images/CinchLogoGifClear.gif" alt="CinchGaming Logo">
+                </div>
+                <div class="sponsor-details">
+                    <h2><a href="https://cinchgaming.com/?ref=aidanthedev" target="_blank">Cinch Gaming</a></h2>
+                    <p>Founded in 2014, Cinch Gaming has helped evolve the pro controller as you know it today. Based in the USA, they offer the world's fastest pro controllers.</p>
+                    <p>Use my code at checkout for 10% off: <strong>aidanthedev</strong></p>
+                </div>
+            </div>
+
+            <div class="sponsor">
+                <div class="sponsor-logo">
+                    <img src="../images/bothosting.png" alt="Bot Hosting.net Logo">
+                </div>
+                <div class="sponsor-details">
+                    <h2>Bot Hosting</h2>
+                    <p>Bot-Hosting.net has been successfully running since 2021 and we are proud to have helped thousands of users bring their bots online 24/7. We know hosting can be confusing, which is why we've tried to simplify the process with extensive guides in our docs. We hope we can help you too, why not give it a try ~ it's free!</p>
+                    <p><strong>Direct Link:</strong> <a href="https://bot-hosting.net/?aff=497200251661320212" target="_blank">bot-hosting.net/?aff=497200251661320212</a></p>
+                </div>
+            </div>
+        </section>
     </div>
 
     <footer>
-        <p>&copy Copyright <script>document.write(/\d{4}/.exec(Date())[0])</script> Aidan White. All Rights Reserved.</p>
+        <p>&copy; <span id="footer-year"></span> Aidan White. All Rights Reserved.</p>
     </footer>
 </body>
 </html>

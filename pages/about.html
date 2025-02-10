@@ -10,45 +10,46 @@
     <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
     <link rel="manifest" href="../images/site.webmanifest">
+    <script src="../index.js" defer></script>
 </head>
 <body>
-    <nav>
+    <nav class="navbar">
         <ul>
-            <center>
             <li><a href="../index.html">Homepage</a></li>
             <li><a href="./projects.html">Projects</a></li>
             <li><a href="./about.html">About</a></li>
             <li><a href="./sponsors.html">Sponsors</a></li>
             <li><a href="./contact.html">Contact</a></li>
-            </center>
         </ul>
     </nav>
 
-    <div class="container">
-        <h1>About Me</h1>
-        <p>
-            I'm Aidan White, an 18-year-old full-stack developer from the United States. I began coding at the age of 11, starting with JavaScript, and later diving into HTML and CSS. Today, I create websites and discord bots.
-        </p>
-        <p>
-            I believe in the power of web development to bring ideas to life. My goal is to make websites that not only look good but also serve a meaningful purpose. Well-designed websites can enhance how people interact with the digital world, and that's what drives my passion for web development.
-        </p>
-        <p>
-            When I'm not coding, I enjoy gaming and listening to music. These interests often inspire my creative solutions and ideas in coding projects.
-        </p>
-        <p>
-            I'm also a Discord server moderator, honing my interpersonal and problem-solving skills while fostering positive online communities.
-        </p>
-        <p>
-            Technology is ever-evolving, and I'm determined to contribute to its transformation. Whether it's a personal project or a client's, my work reflects my dedication, attention to detail, and a constant desire to improve.
-        </p>
-        <p>
-            If you're interested in discussing a website project, a custom Discord bot, or just want to connect, feel free to reach out. You can email me at aidanthedev@zohomail.com or use the Contact page in the navigation bar. I'm always eager to explore new opportunities and collaborate with those who share a passion for technology and innovation.
-        </p>
-        
+    <div class="about-container">
+        <div class="hero-section">
+            <div class="profile-img">
+                <img src="../images/cartoonAidan.png" alt="Aidan White">
+            </div>
+            <div class="bio">
+                <h1>About Me</h1>
+                <p>I'm Aidan White, a <span id="age">19</span>-year-old full-stack developer from the United States. I started coding at age 11 and quickly fell in love with creating things on the web. Today, I specialize in building websites, Discord bots, and custom applications.</p>
+            </div>
+        </div>
+
+        <div class="details">
+            <h2>My Journey</h2>
+            <p>From my first lines of JavaScript to diving into HTML, CSS, and back-end development, my journey in tech has been fueled by curiosity. I am always learning new technologies, tools, and frameworks to stay up-to-date and create cutting-edge solutions.</p>
+            <p>When I'm not working on projects, I enjoy gaming, listening to music, and moderating Discord servers. These hobbies often inspire my creative problem-solving approach and help me stay motivated to push boundaries in my projects.</p>
+            <p>Currently, my main hobby is the Digital Thunderbirds where I am #8 The Narrator and Advance Pilot, I'm also currently working on making a new website for the team which can be found in my Projects.</p>
+        </div>
+
+        <div class="contact">
+            <h2>Let's Connect</h2>
+            <p>If you're interested in collaborating on a website, building a Discord bot, or just want to chat about technology, feel free to reach out! I'm always open to new opportunities and love connecting with like-minded people.</p>
+            <p>Email me at <strong>aidanthedev@zohomail.com</strong> or use the contact page to get in touch.</p>
+        </div>
     </div>
 
     <footer>
-        <p>&copy Copyright <script>document.write(/\d{4}/.exec(Date())[0])</script> Aidan White. All Rights Reserved.</p>
+        <p>&copy; <span id="footer-year"></span> Aidan White. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
