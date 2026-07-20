@@ -233,32 +233,14 @@ ${y * (index % 2 ? -1 : 1)}px
 });
 
 const projects = {
-  filepilot: {
-    title: "FilePilot",
-
-    description:
-      "A modern file management application designed for speed, organization, and a clean user experience.",
-
-    tech: ["C++", "Qt", "Windows"],
-  },
-
   portfolio: {
-    title: "Developer Portfolio",
+    title: "Portfolio",
 
     description:
-      "An interactive portfolio featuring animations, custom UI, and modern web technologies.",
+      "A custom-built developer portfolio featuring interactive UI, smooth animations, and modern web technologies.",
 
     tech: ["HTML", "CSS", "JavaScript"],
-  },
-
-  automation: {
-    title: "Automation Tools",
-
-    description:
-      "Custom utilities that reduce repetitive work through automation.",
-
-    tech: ["Python", "Node.js"],
-  },
+  }
 };
 
 function openProject(id) {
