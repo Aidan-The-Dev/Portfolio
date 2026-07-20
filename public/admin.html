@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Admin Dashboard | Aidan.dev</title>
+
+    <link rel="stylesheet" href="admin.css" />
+  </head>
+
+  <body>
+    <div class="dashboard">
+      <header>
+        <h1>AIDAN.DEV ADMIN</h1>
+
+        <span> SYSTEM ACCESS GRANTED </span>
+      </header>
+
+      <section class="panel">
+        <h2>Currently Building</h2>
+
+        <label> Title </label>
+
+        <input id="featured-title" />
+
+        <label> Description </label>
+
+        <textarea id="featured-description"></textarea>
+
+        <label> Technologies </label>
+
+        <input id="featured-tags" />
+      </section>
+
+      <section class="panel">
+        <h2>Projects</h2>
+
+        <div id="projects-container"></div>
+
+        <button onclick="saveProjects()">Save Changes</button>
+      </section>
+    </div>
+
+    <script src="admin.js"></script>
+  </body>
+</html>

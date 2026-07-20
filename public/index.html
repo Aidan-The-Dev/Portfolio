@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Aidan | Full Stack Developer</title>
+
+    <meta
+      name="description"
+      content="
+Aidan's developer portfolio showcasing software,
+web applications, automation tools, and creative projects.
+"
+    />
+
+    <meta name="author" content="Aidan" />
+
+    <meta
+      name="keywords"
+      content="
+developer,
+programmer,
+software engineer,
+web developer,
+JavaScript,
+C++,
+Python,
+portfolio
+"
+    />
+
+    <!-- Open Graph -->
+
+    <meta property="og:title" content="Aidan | Developer Portfolio" />
+
+    <meta
+      property="og:description"
+      content="Building software, applications, and interactive experiences."
+    />
+
+    <meta property="og:type" content="website" />
+
+    <meta property="og:url" content="https://aidanthedev.xyz" />
+
+    <meta
+      property="og:image"
+      content="https://aidanthedev.xyz/assets/preview.png"
+    />
+
+    <!-- Twitter/X -->
+
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <meta name="twitter:title" content="Aidan | Developer Portfolio" />
+
+    <meta
+      name="twitter:description"
+      content="Software developer creating modern applications."
+    />
+
+    <meta
+      name="twitter:image"
+      content="https://aidanthedev.xyz/assets/preview.png"
+    />
+
+    <!-- Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./astes/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon-16x16.png"
+    />
+  </head>
+
+  <body>
+    <div id="boot-screen">
+      <div class="terminal">
+        <p id="boot-text"></p>
+      </div>
+    </div>
+    <div class="background"></div>
+
+    <canvas id="particles"></canvas>
+
+    <div id="cursor-glow"></div>
+
+    <nav>
+      <div class="logo">Aidan<span>.</span></div>
+
+      <ul>
+        <li><a href="#projects" aria-label="View my projects">Projects</a></li>
+
+        <li><a href="#about" aria-label="View my about">About</a></li>
+
+        <li>
+          <a href="#contact" aria-label="View my contact info">Contact</a>
+        </li>
+      </ul>
+      <button id="theme-toggle" aria-label="Switch between dark and light mode">
+        ◐
+      </button>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-content">
+        <p class="intro">HELLO, I'M</p>
+
+        <h1>Aidan</h1>
+
+        <h2 id="typing"></h2>
+
+        <p class="description">
+          I build modern software, web experiences, automation tools, and
+          applications that are fast, polished, and enjoyable to use.
+        </p>
+
+        <div class="system-status">
+          <span></span>
+          System Online
+        </div>
+
+        <div class="buttons">
+          <a href="#projects" class="primary"> View Projects </a>
+
+          <a href="#contact" class="secondary"> Contact </a>
+        </div>
+      </div>
+
+      <div class="hero-featured">
+        <div class="featured-project">
+          <div class="featured-header">
+            <span></span>
+
+            CURRENTLY BUILDING
+          </div>
+
+          <h3>FilePilot</h3>
+
+          <p>
+            A modern file management application focused on speed, organization,
+            and user experience.
+          </p>
+
+          <div class="featured-tags">
+            <span>C++</span>
+
+            <span>Qt</span>
+
+            <span>Windows</span>
+          </div>
+
+          <a href="#projects"> View Project → </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects">
+      <h2 class="section-title">Featured Projects</h2>
+
+      <div class="project-card" onclick="openProject('filepilot')">
+        <div class="project-image"></div>
+
+        <h3>FilePilot</h3>
+
+        <p>
+          A powerful file management application focused on speed and
+          organization.
+        </p>
+
+        <div class="tags">
+          <span>C++</span>
+          <span>Qt</span>
+        </div>
+      </div>
+
+      <div class="project-card" onclick="openProject('portfolio')">
+        <div class="project-image"></div>
+
+        <h3>Developer Portfolio</h3>
+
+        <p>
+          An interactive personal portfolio built with modern web technologies.
+        </p>
+
+        <div class="tags">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+        </div>
+      </div>
+
+      <div class="project-card" onclick="openProject('automation')">
+        <div class="project-image"></div>
+
+        <h3>Automation Tools</h3>
+
+        <p>Custom utilities designed to automate repetitive tasks.</p>
+
+        <div class="tags">
+          <span>Python</span>
+          <span>Node.js</span>
+        </div>
+      </div>
+
+      <div class="project-card" onclick="openProject('automation')">
+        <div class="project-image"></div>
+
+        <h3>Project Name</h3>
+
+        <p>Short description.</p>
+
+        <div class="tags">
+          <span>Node</span>
+          <span>Express</span>
+          <span>MongoDB</span>
+        </div>
+      </div>
+
+      <div class="project-card" onclick="openProject('automation')">
+        <div class="project-image"></div>
+
+        <h3>Project Name</h3>
+
+        <p>Another project description.</p>
+
+        <div class="tags">
+          <span>C++</span>
+          <span>Qt</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div class="stat-card">
+        <h3>Too Many</h3>
+        <p>Projects Built</p>
+      </div>
+
+      <div class="stat-card">
+        <h3 data-count="5">0</h3>
+        <p>Languages</p>
+      </div>
+
+      <div class="stat-card">
+        <h3 data-count="1000">0</h3>
+        <p>Hours Coding</p>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <h2 class="section-title">About Me</h2>
+
+      <div class="about-container">
+        <div class="profile-card">
+          <h3>SYSTEM PROFILE</h3>
+
+          <div class="profile-line">
+            <span>Name</span>
+            Aidan
+          </div>
+
+          <div class="profile-line">
+            <span>Role</span>
+            Developer
+          </div>
+
+          <div class="profile-line">
+            <span>Status</span>
+            <b class="online"> ● Online </b>
+          </div>
+
+          <div class="profile-line">
+            <span>Focus</span>
+            Software & Web
+          </div>
+        </div>
+
+        <div class="about-text">
+          <p>
+            I enjoy creating software that combines performance, functionality,
+            and great design. My goal is to build projects that are not only
+            technically impressive but enjoyable to use.
+          </p>
+
+          <div class="timeline">
+            <div>
+              <span>2018</span>
+              Started Programming Discord Bots With Python
+            </div>
+
+            <div>
+              <span>2020</span>
+              Started Building Roblox Games Using Lua
+            </div>
+
+            <div>
+              <span>2023</span>
+              Started Building Websites
+            </div>
+
+            <div>
+              <span>2026-Present</span>
+              Continuing My Development Journey
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="terminal-section" class="terminal-section">
+      <h2 class="section-title">Developer Terminal</h2>
+
+      <div class="terminal-window">
+        <div class="terminal-header">
+          <span></span>
+          <span></span>
+          <span></span>
+
+          <p>aidan@portfolio</p>
+        </div>
+
+        <div id="terminal-output">
+          <p>Welcome to Aidan's terminal.</p>
+
+          <p>Type <b>help</b> to see available commands.</p>
+        </div>
+
+        <div class="terminal-input">
+          <span> > </span>
+
+          <input id="command-input" autocomplete="off" spellcheck="false" />
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="skills">
+      <h2 class="section-title">Technology Stack</h2>
+
+      <div class="skill-orbit">
+        <div class="core">AIDAN.DEV</div>
+
+        <div class="skill-node node1">JavaScript</div>
+
+        <div class="skill-node node2">HTML</div>
+
+        <div class="skill-node node3">CSS</div>
+
+        <div class="skill-node node4">C++</div>
+
+        <div class="skill-node node5">Python</div>
+
+        <div class="skill-node node6">Node.js</div>
+
+        <div class="skill-node node7">Git</div>
+
+        <div class="skill-node node8">Docker</div>
+      </div>
+    </section>
+
+    <div id="project-modal">
+      <div class="modal-content">
+        <button onclick="closeProject()">×</button>
+
+        <h2 id="modal-title"></h2>
+
+        <p id="modal-description"></p>
+
+        <h3>Technologies</h3>
+
+        <div id="modal-tech"></div>
+
+        <div class="modal-buttons">
+          <a href="#"> GitHub </a>
+
+          <a href="#"> Live Demo </a>
+        </div>
+      </div>
+    </div>
+
+    <section id="contact" class="contact">
+      <h2 class="section-title">Contact</h2>
+
+      <div class="contact-card">
+        <div class="status">
+          <span></span>
+
+          Available for projects
+        </div>
+
+        <h3>Let's build something amazing.</h3>
+
+        <p>Have an idea, project, or opportunity? Feel free to reach out.</p>
+
+        <div class="contact-links">
+          <a href="mailto:aidan.white482@gmail.com"> Email </a>
+
+          <a href="https://github.com/Aidan-The-Dev" target="_blank">
+            GitHub
+          </a>
+
+          <a
+            href="https://discord.com/users/497200251661320212"
+            target="_blank"
+          >
+            Discord
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <div id="command-palette">
+      <div class="command-box">
+        <input
+          id="command-search"
+          placeholder="Search commands..."
+          autocomplete="off"
+        />
+
+        <div class="command-results">
+          <p>Type a command...</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="page-loader"></div>
+
+    <script src="js/particles.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

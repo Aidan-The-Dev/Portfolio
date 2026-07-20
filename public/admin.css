@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+
+  background: #05070c;
+
+  color: white;
+
+  font-family: Arial, sans-serif;
+}
+
+.login-box {
+  width: 400px;
+
+  margin: 150px auto;
+
+  padding: 40px;
+
+  background: #0b1020;
+
+  border-radius: 25px;
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  text-align: center;
+}
+
+input,
+textarea {
+  width: 100%;
+
+  padding: 15px;
+
+  margin: 10px 0 20px;
+
+  background: #05070c;
+
+  border: 1px solid #26324d;
+
+  border-radius: 10px;
+
+  color: white;
+}
+
+textarea {
+  height: 120px;
+
+  resize: none;
+}
+
+button {
+  padding: 15px 30px;
+
+  background: #4f8cff;
+
+  border: none;
+
+  border-radius: 30px;
+
+  color: white;
+
+  cursor: pointer;
+
+  font-size: 16px;
+}
+
+.dashboard {
+  padding: 40px 10%;
+}
+
+header {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-bottom: 40px;
+}
+
+header span {
+  color: #55ff9a;
+
+  font-family: monospace;
+}
+
+.panel {
+  background: #0b1020;
+
+  padding: 35px;
+
+  border-radius: 25px;
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  margin-bottom: 30px;
+}
+
+.project-editor {
+  padding: 25px;
+
+  margin-bottom: 20px;
+
+  background: #05070c;
+
+  border-radius: 15px;
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
